@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============== LINk BOX ICON =================== --> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ============== LINK CSS =================== --> 
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dados da Escola</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container__margin">
+            <a href="#" class="nav__logo">
+                Escola.
+            </a>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Estatisticas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Alunos</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#trick" class="nav__link">Materias</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Provas</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="button button-support">Support</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button class="button button__top" id="button-create">Criar Aluno</button>
+        
+        <div class="create__container" id="create-container">
+            <i class='bx bx-x form__close' id="form-close"></i>
+            <form class="container__form">
+                <div class="form__flex">
+                    <input type="text" class="form__input" placeholder="Digite Seu Nome" id="nome-input">
+                    <input type="number" class="form__input" placeholder="Matricula" id="matricula-input">
+                    <input type="number" class="form__input" placeholder="Nota 1" id="nota1-input">
+                    <input type="number" class="form__input" placeholder="Nota 2" id="nota2-input">
+                    <input type="number" class="form__input" placeholder="Nota 3" id="nota3-input">
+                    <button type="submit" class="button form__button">Eviar Dados</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="dados__alunos">
+            <h2 class="dados__title">Dados dos Alunos</h2>
+            <table class="dados__tabela">
+               
+            </table>
+        </div>
+    </div>
+</body>
+
+<!-- ============== LINK JS =================== -->
+<script src="scripti.js"></script>
+</html>
